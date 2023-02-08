@@ -1,9 +1,30 @@
-@media screen and (max-width: 700px) {   /*ate 700px vai ter essa configuração*/
-  header .container {
-  display: flex;
-  flex-direction: column;
+
+
+@media screen and (max-width: 480px) {
+  .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+      width: auto;
+  }
+
+  h1 {
+      text-align: center;
+  }
+
+  nav {
+      position: static;
+  }
+
+  .lista-sobre-mim, .imagem-contato {
+      width: 100%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .caixa, .produtos, .produtos li {
+      width: auto;
+  }
+
+}
+
 
 body {
   background: linear-gradient(236.85deg, #ff1493 27.26%, #7b68ee 96.03%);
