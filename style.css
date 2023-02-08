@@ -1,7 +1,5 @@
-
-
 @media screen and (max-width: 480px) {
-  .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+  .perfil, .tema, .conteudo-beneficios, .mapa-conteudo, .video, .projetos-item {
       width: auto;
   }
 
@@ -13,7 +11,7 @@
       position: static;
   }
 
-  .lista-sobre-mim, .imagem-contato {
+  .lista-sobre-mim, .imagem-contato .projetos-item {
       width: 100%;
   }
 }
