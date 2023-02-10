@@ -1,29 +1,3 @@
-@media screen and (max-width: 480px) {
-  .perfil, .tema, .conteudo-beneficios, .mapa-conteudo, .video, .projetos-item {
-      width: auto;
-  }
-
-  h1 {
-      text-align: center;
-  }
-
-  nav {
-      position: static;
-  }
-
-  .lista-sobre-mim, .imagem-contato .projetos-item {
-      width: 100%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .caixa, .produtos, .produtos li {
-      width: auto;
-  }
-
-}
-
-
 body {
   background: linear-gradient(236.85deg, #ff1493 27.26%, #7b68ee 96.03%);
   font-family: Arial, Helvetica, sans-serif;
@@ -34,7 +8,7 @@ body {
   color: #1c1c1c;
   margin: 64px;
   border-radius: 20px;
-  box-shadow: 6px 6px 6px #0e1d2f;
+  box-shadow: 8px 8px 8px #0e1d2f;
   padding: 64px;
 }
 
@@ -49,7 +23,7 @@ body ul {
   list-style-type: none;
   align-items: center;
   padding: 16px;
-  font-size: 25px; 
+  font-size: 30px; 
 }
 
 body img{
@@ -80,7 +54,7 @@ main li{
   width: 200px;
   height: 200px;
   border-radius: 50%;  
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.60);    
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6);    
 }
 
 .titulo {
@@ -88,7 +62,8 @@ main li{
 }
 
 .titulo h3{
-  color: #ff1493;   
+  color: #ff1493; 
+  font-size: 25px;   
 }
 
 
@@ -103,8 +78,9 @@ main li{
 }
 
 .titulo-principal{
-	padding-left: 20px;
+	padding: 25px;
   text-align: center;
+  font-size: 25px; 
 }
 
 .titulo-principal p{
