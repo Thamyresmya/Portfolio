@@ -1,113 +1,170 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
+<html lang="pt br">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Thamyres Cavalcante</title>
+    <title>Portfólio Thamyres</title>
     <link rel="icon" href="https://github.com/Thamyresmya.png">
-   
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">   
-  </head>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- icon -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
 
-  <body>
-    <div class="container">
-      <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projetos.html">Projetos</a></li>                
-        </ul>
-      </nav>
+    <nav id="navbar">
+    <a href="https://github.com/Thamyresmya" target="_blank" id="logo">Potfó<span>lio</span></a>
+    <div id="navbar-right">
+        <a href="index.html" class="active" >Home</a>
+        <a href="#about">Sobre mim</a> 
+        <a href="#habilidades">Habilidades</a>         
+        <a href="#projetos">Projetos</a>                 
+        <a href="experiencias.html">Experiências</a> 
+    </div>
+    </nav>
 
-      <header class="cabecalho">
-        <div class="perfil">
-            <img class="perfil-foto" src="https://github.com/Thamyresmya.png"/>
-            <div class="titulo">
-              <h1>Thamyres Cavalcante</h1>
-              <h2>Developer Back-End Jr.</h2>
-              <h3>Java & Python</h3>
+    <!-- sessão sobre -->
+    <section id="about" class="background-color-sobre"> 
+        <div class="Main-sobre">
+            <img src="imagens/Thamyres/foto-3.png" alt="">
+            <div class="text-sobre">
+                <h2>Sobre mim</h2>
+                <h4>Olá, meu nome é</h4>
+                <h1>Thamyres <span>Cavalcante</span></h1>
+                <h5>Sou desenvolvedora <span>Back End Java</span> em formação</h5>
+                <p class="Paragrafo-button">
+                    Sou uma profissional em constante aprendizado, entusiasta ao desenvolvimento de software, 
+                    estou realizando transição de carreira, cursando faculdade de <span>Ciência da Computação</span>. 
+                    Faço parte de um grupo de estudos chamado Go Ahead, cujo objetivo é formar profissionais 
+                    para o mercado de trabalho. Nosso grupo foca no aprendizado sobre Java e suas aplicações, 
+                    utilizando metodologias ágeis de desenvolvimento de software como Scrum, Daily meeting e o 
+                    Trello para organização e entrega de conteúdo. 
+                </p>
+            </div> <!-- text-sobre -->
+        </div> <!-- Main-sobre -->
+    </section> <!-- background-color-sobre -->
+
+    <!-- habilidades -->
+    <section id="habilidades">
+        <div class="container-servicos">
+            <div class="title">
+                <h2>Habilidades</h2>
+            </div> <!-- title -->
+            <div class="caixa">
+                <div class="card">   
+                    <i class="fa fa-bars"></i>
+                    <h5>Java | Spring Boot </h5>
+                    <p> Durante os estudos de Java, desenvolvi alguns projetos utilizando Orientação a Objetos,
+                        Spring Boot API Rest, Spring MVC, Maven, Servlets e MVC, Spring Data JPA.                        
+                    </p>
+                    <a href="experiencias.html#java" class="btn">Projetos</a>
+                </div> <!-- card bars-->
+                <div class="card">   
+                    <i class="fa fa-bars"></i>
+                    <h5>Python | Django</h5>
+                    <p> Durante os estudos de Python, desenvolvi alguns projetos utilizando API com Django 3,
+                        Django: templates e boas práticas, persistência de dados e Admin, autenticação de formulários e alerta. 
+                    </p>
+                    <a href="experiencias.html#python" class="btn">Projetos</a>
+                </div> <!-- card user-->
+                <div class="card">   
+                    <i class="fa fa-bars"></i>
+                    <h5>HTML | CSS</h5>
+                    <p> Durante os estudos de Front End, aprendi a criar layouts modernos para Web, 
+                        além de cabeçalhos, rodapés e aplicar estilos com CSS.
+                        Tornar um site responsivo para diferentes tamanhos de tela.
+                    </p>
+                    <a href="experiencias.html#front" class="btn">Projetos</a>
+                </div> <!-- card bell -->
+            </div> <!-- caixa -->
+        </div> <!-- container-servicos -->
+    </section>
+    <!-- fim habilidades -->
+
+    <!-- projetos -->
+    <section id="projetos">
+            <div class="title">
+                <a href="https://github.com/Thamyresmya" target="_blank">
+                    <h2>Alguns Projetos</h2>
+                </a>
+            </div> <!-- title -->
+        <!-- slider-->
+        <div class="slider">
+            <div class="slides"> <!-- slides-->
+                <!-- button-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">                
+                <!-- fim button-->
+
+                <!-- slides-->
+                <div class="slide first">
+                    <img src="imagens/Projetos/1.png" alt="projeto 1">                    
+                </div>
+                <div class="slide">
+                    <img src="imagens/Projetos/2.png" alt="projeto 2">
+                </div>
+                <div class="slide">
+                    <img src="imagens/Projetos/3.png" alt="projeto 3">
+                </div>
+                <div class="slide">
+                    <img src="imagens/Projetos/4.png" alt="projeto 4">
+                </div>                
+                <!-- fim slides-->
+
+                <!-- navigation auto -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>                    
+                </div>
+                <!-- fim navigation auto-->
             </div>
-        </div> 
-        <div class="tema">
-          <button onclick="mudaTema()">Alterar Tema</button>
-        </div>        
-      </header>
+            <!-- fim slider-->
 
-        <main>
-            <section class="Sobre-mim">              
-                <div class="lista-sobre-mim">                
-                  <p>
-                    <h2>Objetivo:</h2>
-                    Atuar na área de tecnologia com desenvolvimento de software na plataforma Java.
-                  </p>               
-                  <div>
-                    <h2>Conhecimentos em:</h2>
-                    <li>Linguagens de Programação: Java | Python</li>
-                    <li>Front-End: HTML, CSS</li>
-                    <li>Servidor Web: TomCat</li>
-                    <li>Versionamento de código: Github</li>
-                    <li>Metodologias ágeis: Scrum, Daily meeting e Trello</li>
-                    <li>Framework: Spring | Django</li>
-                    <li>IDE: Eclipse | VSCode </li>
-                  </div>              
-                  <p>
-                    <h2>Sobre mim:</h2>
-                      Sou uma profissional em constante aprendizado, entusiasta ao desenvolvimento de software, estou realizando transição de carreira,
-                      cursando faculdade de Ciência da Computação. Faço parte de um grupo de estudos chamado Go Ahead, 
-                      cujo objetivo é formar profissionais para o mercado de trabalho. Nosso grupo foca no aprendizado 
-                      sobre Java e suas aplicações, utilizando metodologias ágeis de desenvolvimento de software como Scrum, 
-                      Daily meeting e o Trello para organização e entrega de conteúdo. Tenho experiência em Sistema de Gestão 
-                      da Qualidade - NBR ISO 9001:2015, com isso realizo meus projetos visando sempre a excelência, satisfação 
-                      do usuário e compromisso nos prazos de entrega.
-                  </p>
-              </div>
-            </section>
+            <!-- inicio manual-navigation-->
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>                
+            </div>
+            <!-- fim manual-navigation-->
 
-            <section class="Formações">
-              <h3 class="titulo-principal">Outras Formações e Experiência:</h3>
-                <li>Formada em Gestão Financeira.</li>
-              <h2 class="titulo-principal">Com experiência nas seguintes áreas::</h2>
-                <li>Departamento Pessoal</li>
-                <li>Financeiro</li>   
-                <li>Logística</li>  
-                <li>Sistema de Gestão da Qualidade - Interpretação e Implementação da NBR ISO 9001:2015.</li>         
-            </section>
-  
-            <section class="Tecnologias">
-              <h3 class="titulo-principal">Tecnologias:</h3>
-                <ul>
-                    <img align="center" alt="mya-Js" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-                    <img align="center" alt="mya-HTML" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                    <img align="center" alt="mya-CSS" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-                    <img align="center" alt="mya-Java" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg">
-                    <img align="center" alt="mya-Python" height="40" width="30" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg">
-                    <img align="center" alt="mya-Sprint" height="40" width="30" src="https://camo.githubusercontent.com/2cbbf5ca53964ce3051c6e93fbdd681459487365c5e0b9b7ab638587767506f9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f737072696e672f737072696e672d6f726967696e616c2e737667">               
-                </ul>
-            </section> 
-        </main>
-        
-        <footer>          
-          <a href="https://www.instagram.com/thamyres__cavalcante/" target="_blank" rel="noopener noreferrer">
-            <img src="./img/redesSociais/instagram.png" class="imagem-contato">
-            <p>instagram</p>
-        </a>
-        <a href="https://www.facebook.com/thamyres.dasilva.39" target="_blank" rel="noopener noreferrer">
-            <img src="./img/redesSociais/facebook.png">
-            <p>facebook</p>
-        </a>
-        <a href="https://github.com/Thamyresmya" target="_blank" rel="noopener noreferrer">
-            <img src="./img/redesSociais/github.png">
-            <p>Github</p>
-        </a>
-        <a href="https://www.linkedin.com/in/thamyrescavalcante/" target="_blank" rel="noopener noreferrer">
-            <img src="./img/redesSociais/linkedin.png">
-            <p>Linkedin</p>
-        </a>              
-       </footer> 
-      </div> 
-    <script  src="./script.js"></script>
-  </body>
+        </div> <!-- fim slider-->
+    </section>
+  <!-- fim do projetos -->
+
+
+
+
+
+<!-- rodapé  -->
+<footer class="rodape">     
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/thamyres__cavalcante/" target="_blank">
+                <img src="imagens/redes_sociais/1.png" alt="ícone Instagram">        
+            </a> 
+            <a href="https://github.com/Thamyresmya" target="_blank">
+                <img src="imagens/redes_sociais/2.png" alt="ícone github">        
+            </a> 
+            <a href="https://www.linkedin.com/in/thamyrescavalcante/" target="_blank">
+                <img src="imagens/redes_sociais/3.png" alt="ícone Instagram">        
+            </a>     
+        </div> <!-- redes-sociais --> 
+        <div>
+            <p>Desenvolvido por Thamyres Cavalcante.</p>
+        </div>    
+</footer> 
+<!-- fim do rodapé  -->
+   
+<script src="js/index.js"></script> 
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
 </html>
