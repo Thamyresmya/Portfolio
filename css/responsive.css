@@ -1,0 +1,21 @@
+
+@media screen and (max-width: 580px) {
+    /* nav  */
+    #navbar {
+      padding: 10px 10px !important;
+    }
+    #navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #navbar-right {
+      float: none;
+    }
+
+    /* sobre mim  */
+    .Main-sobre img {
+        margin: 0px;
+    }
+
+}
