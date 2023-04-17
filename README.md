@@ -1,8 +1,8 @@
 
-![](img/Capa.png)
+![](imagens/Capa.png)
 
 <p align="center">
-Apresentação de alguns dos meus projetos.
+Apresentação de meu portfólio.
 </p>
 
 <br>
